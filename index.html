@@ -1,81 +1,94 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Luigi Charles</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luigi Charles</title>
 
-        <!-- Inter font -->
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-        <style type="text/css">
-            body {
-                margin: 40px auto;
-                max-width: 900px;
-                line-height: 1.6;
-                font-size: 18px;
-                color: #444;
-                padding: 0 10px;
-                position: relative;
-                min-height: 100vh;
-                font-family: "Inter", sans-serif;
-            }
+  <style>
+    body {
+      margin: 40px auto;
+      max-width: 650px;
+      line-height: 1.6;
+      font-family: 'Inter', sans-serif;
+      font-size: 18px;
+      color: #222;
+      padding: 0 20px;
+    }
 
-            h1 {
-                line-height: 1.2;
-                margin-bottom: 3rem;
-                font-family: "Inter", sans-serif;
-            }
+    h1 {
+      font-size: 42px;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
 
-            h2, h3 {
-                line-height: 1.2;
-                font-family: "Inter", sans-serif;
-            }
+    h2 {
+      font-size: 28px;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
 
-            /* email bottom-left */
-            .email {
-                position: fixed;
-                bottom: 20px;
-                left: 20px;
-                font-size: 16px;
-                color: #444;
-            }
+    a {
+      color: #003cff;
+      text-decoration: none;
+      font-weight: 600;
+    }
 
-            /* quote bottom-right single line */
-            .quote {
-                position: fixed;
-                bottom: 20px;
-                right: 20px;
-                font-size: 16px;
-                color: #444;
-                font-style: italic;
-                text-align: right;
-                white-space: nowrap; /* force single line */
-            }
-        </style>
-    </head>
+    a:hover {
+      text-decoration: underline;
+    }
 
-    <body>
-        <h1>Luigi Charles</h1>
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      padding-bottom: 40px;
+      font-size: 16px;
+      line-height: 1.4;
+    }
 
-        <h2><a href="https://thesislabs.ai" target="_blank">Thesis</a></h2>
-        <p>
-            Founding Thesis with my brother and his friend to push the frontier of AI for scientific discovery.
-        </p>
+    .footer-email,
+    .footer-quote {
+      display: block;
+      margin-bottom: 10px;
+      word-break: break-word;
+    }
 
-        <h2><a href="https://sphereft.com" target="_blank">Sphere</a></h2>
-        <p>
-            Founded Sphere to optimize global money movement. Scaled it from 0 -> $1.5B in annual volume.
-        </p>
+    @media (max-width: 480px) {
+      body {
+        padding: 0 14px;
+      }
+      h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
 
-        <!-- bottom-left email -->
-        <div class="email">
-            <a href="mailto:luigi@thesislabs.ai">luigi@thesislabs.ai</a>
-        </div>
+<body>
 
-        <!-- bottom-right quote forced single line -->
-        <div class="quote">
-            It's a dangerous business, stepping out your door…
-        </div>
-    </body>
+  <h1>Luigi Charles</h1>
+
+  <h2>Thesis</h2>
+  <p>
+    Founding <a href="https://thesislabs.ai">Thesis</a> with my brother and his friend
+    to push the frontier of AI for scientific discovery.
+  </p>
+
+  <h2>Sphere</h2>
+  <p>
+    Founded <a href="https://spherepay.co">Sphere</a> to optimize global money movement.
+    Scaled it from 0 → $1.5B in annual volume.
+  </p>
+
+  <footer>
+    <div class="footer-email">luigi@thesislabs.ai</div>
+    <div class="footer-quote">It's a dangerous business, stepping out your door…</div>
+  </footer>
+
+</body>
 </html>
