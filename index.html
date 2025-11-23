@@ -23,7 +23,7 @@
 
             h1 {
                 line-height: 1.2;
-                margin-bottom: 3rem; /* doubled vertical spacing */
+                margin-bottom: 3rem;
                 font-family: "Inter", sans-serif;
             }
 
@@ -41,7 +41,7 @@
                 color: #444;
             }
 
-            /* quote bottom-right */
+            /* quote bottom-right single line */
             .quote {
                 position: fixed;
                 bottom: 20px;
@@ -50,7 +50,7 @@
                 color: #444;
                 font-style: italic;
                 text-align: right;
-                max-width: 300px;
+                white-space: nowrap; /* force single line */
             }
         </style>
     </head>
@@ -58,16 +58,14 @@
     <body>
         <h1>Luigi Charles</h1>
 
-        <h2>Thesis</h2>
+        <h2><a href="https://thesislabs.ai" target="_blank">Thesis</a></h2>
         <p>
-            Founding <a href="https://thesislabs.ai" target="_blank">Thesis</a> with my brother and his friend
-            to push the frontier of AI for scientific discovery.
+            Founding Thesis with my brother and his friend to push the frontier of AI for scientific discovery.
         </p>
 
-        <h2>Sphere</h2>
+        <h2><a href="https://sphereft.com" target="_blank">Sphere</a></h2>
         <p>
-            Founded <a href="https://sphereft.com" target="_blank">Sphere</a> in my attic to optimize global
-            money movement. Scaled it from 0 -> $1.5B in annual volume.
+            Founded Sphere to optimize global money movement. Scaled it from 0 -> $1.5B in annual volume.
         </p>
 
         <!-- bottom-left email -->
@@ -75,7 +73,7 @@
             <a href="mailto:luigi@thesislabs.ai">luigi@thesislabs.ai</a>
         </div>
 
-        <!-- bottom-right quote -->
+        <!-- bottom-right quote forced single line -->
         <div class="quote">
             It's a dangerous business, stepping out your door…
         </div>
