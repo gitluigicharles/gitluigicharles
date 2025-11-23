@@ -1,94 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luigi Charles</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luigi Charles</title>
+    <style>
+        body {
+            margin: 40px auto;
+            max-width: 650px;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            font-size: 18px;
+            color: #333;
+            padding: 0 10px;
+        }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+        h1 {
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
 
-  <style>
-    body {
-      margin: 40px auto;
-      max-width: 650px;
-      line-height: 1.6;
-      font-family: 'Inter', sans-serif;
-      font-size: 18px;
-      color: #222;
-      padding: 0 20px;
-    }
+        h2 {
+            font-size: 30px;
+            margin-top: 50px;
+        }
 
-    h1 {
-      font-size: 42px;
-      font-weight: 600;
-      margin-bottom: 40px;
-    }
+        a {
+            color: #0033ff;
+            text-decoration: underline;
+        }
 
-    h2 {
-      font-size: 28px;
-      margin-top: 40px;
-      margin-bottom: 10px;
-      font-weight: 600;
-    }
+        /* Footer fixed to bottom */
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.4;
+            padding: 0 20px;
+        }
 
-    a {
-      color: #003cff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      margin-top: 60px;
-      text-align: center;
-      padding-bottom: 40px;
-      font-size: 16px;
-      line-height: 1.4;
-    }
-
-    .footer-email,
-    .footer-quote {
-      display: block;
-      margin-bottom: 10px;
-      word-break: break-word;
-    }
-
-    @media (max-width: 480px) {
-      body {
-        padding: 0 14px;
-      }
-      h1 {
-        font-size: 34px;
-      }
-    }
-  </style>
+        /* Stack email + quote on mobile */
+        @media (max-width: 600px) {
+            .footer {
+                font-size: 15px;
+                bottom: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-  <h1>Luigi Charles</h1>
+    <h1>Luigi Charles</h1>
 
-  <h2>Thesis</h2>
-  <p>
-    Founding <a href="https://thesislabs.ai">Thesis</a> with my brother and his friend
-    to push the frontier of AI for scientific discovery.
-  </p>
+    <h2>Thesis</h2>
+    <p>
+        Founding <a href="https://thesislabs.ai" target="_blank">Thesis</a> with my brother and his friend to push the frontier of AI for scientific discovery.
+    </p>
 
-  <h2>Sphere</h2>
-  <p>
-    Founded <a href="https://spherepay.co">Sphere</a> to optimize global money movement.
-    Scaled it from 0 → $1.5B in annual volume.
-  </p>
+    <h2>Sphere</h2>
+    <p>
+        Founded <a href="https://sphereinc.com" target="_blank">Sphere</a> to optimize global money movement.
+        Scaled it from 0 → $1.5B in annual volume.
+    </p>
 
-  <footer>
-    <div class="footer-email">luigi@thesislabs.ai</div>
-    <div class="footer-quote">It's a dangerous business, stepping out your door…</div>
-  </footer>
+    <div class="footer">
+        <div>luigi@thesislabs.ai</div>
+        <div>It's a dangerous business, stepping out your door...</div>
+    </div>
 
 </body>
 </html>
